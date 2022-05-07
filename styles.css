@@ -1,0 +1,158 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      list-style: none;
+      font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color: #94D9EA;
+}
+
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: #4c5052;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: #f7f7f7;
+}
+.left-content{
+    padding: 1rem 1rem;
+}
+.profile{
+    width: 100%;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    padding: 1rem 1rem;
+    width: 60%;
+    border:5px solid white;
+    border-radius: 30%;
+}
+.name{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: spacing 0.8rem;
+    padding: 0.8rem 0.8rem;
+    
+}
+.designation{
+    font-size: 1rem;
+    color: #94D9EA;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #f7f7f7;
+
+
+}
+.description{
+    font-size: 0.75rem;
+    color: #94D9EA;
+    text-align: center;
+    padding-bottom: 1rem 1rem;
+
+}
+
+.contact-item li{ 
+    padding: 0.4rem 0;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contact-item li i{
+    padding-right: 1rem;
+    color: cadetblue;
+    
+}
+
+.personal-details li{
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #718096;
+    
+
+}
+.personal-details li i{
+    padding-right: 0.5rem;
+    color: cadetblue;
+
+}
+.skills-title{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #f7f7f7;
+}
+
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    color: white;
+    padding-top: 0.9rem;
+    padding-bottom: 0.5rem;
+
+}
+.progress-bar{
+    background-color: #dee4e7;
+    position: relative;
+    border: 1px solid white;
+    height: 4px;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    color: cadetblue;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.para{
+    line-height: 1.6rem;
+    color: #718096;
+    font-size: 1.1rem;
+
+}
+.education-content{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+
+}
+.experience-content{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+}
+.pro-list{
+    line-height: 1.6rem;
+    color: #718096;
+    font-size: 1.1rem;
+}
+@media screen and (max-width:673px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
